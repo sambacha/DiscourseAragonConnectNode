@@ -1,4 +1,15 @@
+# travis-ci
+os: linux
+dist: xenial
+
 language: node_js
 node_js:
   - "8.9"
   - "node"
+  - "10"
+
+git:
+quiet: true
+
+script: 'true'
+
