@@ -1,3 +1,4 @@
+!/bin/bash
 set -v
 
 # Install dependencies from apt
@@ -5,7 +6,7 @@ apt-get update
 apt-get install -yq ca-certificates git build-essential supervisor
 
 # Install nodejs
-mkdir /opt/nodejs
+mkdir -p /opt/nodejs
 curl https://nodejs.org/dist/v8.12.0/node-v8.12.0-linux-x64.tar.gz | tar xvzf - -C /opt/nodejs --strip-components=1
 ln -s /opt/nodejs/bin/node /usr/bin/node
 ln -s /opt/nodejs/bin/npm /usr/bin/npm
