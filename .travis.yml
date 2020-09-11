@@ -11,5 +11,6 @@ node_js:
 git:
 quiet: true
 
-script: 'true'
+script: ./seriesci.sh
+
 
