@@ -2,8 +2,8 @@
 set -v
 
 # Install dependencies from apt
-apt-get update
-apt-get install -yq ca-certificates git build-essential supervisor
+sudo apt-get update
+sudo apt-get install -yq ca-certificates git build-essential supervisor
 
 # Install nodejs
 mkdir -p /opt/nodejs
